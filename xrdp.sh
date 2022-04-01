@@ -5,7 +5,8 @@ echo ""
 rm -fr google-xrdp.sh  ngrok  ngrok.zip
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
-./ngrok authtoken $authtoken 
+read -p "> Ngrok Authtoken: " CRP
+./ngrok authtoken $CRP 
 nohup ./ngrok tcp --region ap 3389 &>/dev/null &
 echo "====================="
 echo "SETTING NGROK DONE"
@@ -42,8 +43,8 @@ echo "======================"
 echo "YOUR X-RDP INFO"
 echo "======================"
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
-echo "Username: bintang"
-echo "Password: that you created"
+echo "Username: jancok"
+echo "Password: jancok"
 echo "==========================="
 echo ""
 
