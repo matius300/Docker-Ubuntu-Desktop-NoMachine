@@ -1,3 +1,9 @@
+echo "PROGRESS TIME : 5 MNT"
+echo "USE STABIL CONNECTION"
+echo ""
+echo ""
+./ngrok authtoken $authtoken 
+nohup ./ngrok tcp --region ap 3389 &>/dev/null &
 echo "====================="
 echo "SETTING NGROK DONE"
 echo "====================="
