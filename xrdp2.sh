@@ -1,3 +1,7 @@
+echo "PROGRESS TIME : 5 MNT"
+echo "USE STABIL CONNECTION"
+echo ""
+echo ""
 rm -fr google-xrdp.sh  ngrok  ngrok.zip
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
