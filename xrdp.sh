@@ -1,12 +1,3 @@
-echo "PROGRESS TIME : 5 MNT"
-echo "USE STABIL CONNECTION"
-echo ""
-echo ""
-echo "====================="
-echo "SETTING NGROK DONE"
-echo "====================="
-echo ""
-echo ""
 sudo apt install lxde > /dev/null 2>&1
 sudo apt install -y xrdp > /dev/null 2>&1
 sudo sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
